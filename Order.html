@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+     <title>Site</title>
+     <meta charset="UTF-8"/>
+	 <meta name="viewport" content="width=device-width"/>
+     <link rel="stylesheet" href="style.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1 {
+        font-family: 'Kelly Slab', cursive;
+    }
+
+    img {
+        margin-bottom: -7px;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-button w3-black w3-xxlarge w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="Home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Головна</a>
+            <a href="Services.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Послуги</a>
+            <a href="Order.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Замовити</a>
+            <a href="Contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+        <!-- Header -->
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="clear">
+
+                 <a target="" href="index.html" class="w3-btn1"><img src="img\logo.jpg" style="width:30%"></a>
+
+            </div>  
+             <!-- Text block -->
+             <header class="contact_logo">
+                <h1><b>Зробити замовлення</b></h1>
+            </header>
+        </div>
+			
+    </div>
+	
+	  <!-- Order block -->
+	<div class="warpper">
+	    <div class="form">
+		    <form action="#" id="form" class="form_body">
+			
+			  <div class="form_item">
+			     <label for="formName" class="form_label">ПІБ*</label>
+				 <input placeholder="Іванов Іван Іванович" id="formName" type="text" name="name" class="form_input _req">
+			  </div>
+			  
+			  <div class="form_item">
+			     <label for="formEmail" class="form_label">E-mail*</label>
+				 <input placeholder="site@mail.com" id="formEmail" type="text" name="email" class="form_input _email _req">
+			  </div>
+			  
+			  <div class="form_item">
+			     <label for="formPhone" class="form_label">Номер телефону*</label>
+				 <input placeholder="+380123456789" id="formPhone" type="text" name="phone" class="form_input _req _phone">
+			  </div>
+			  
+			  <div class="form_item">
+			     <label for="formMessage" class="form_label">Опис послуги*</label>
+				 <textarea name="message" id="formMessage" class="form_input _req"></textarea>
+			  </div>
+			  
+			  <div class="form_item">
+			    <div class="form_label">Додати додаток</div>
+				<div class="file">
+				    <div class="file_item">
+					    <input id="formImage" multiple accept=".jpg, .png, .jpeg" type="file" name="image" class="file_input">
+					</div>
+					<div id="formPreview" class="file_preview"></div>
+				</div>
+			 </div>
+			 
+			  <button type="submit" class="form_button">Замовити</button>
+			</form>
+		</div>
+	</div>
+        <!-- End Order block -->
+    
+
+    <!-- Footer -->
+    <footer class="w3-container padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:50px">
+        <p class="w3-medium"> Київ 2024 <br>Всі права захищені.</br> </p>
+    </footer>
+
+    <script>
+	
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+	
+	<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+     <title>Site</title>
+     <meta charset="UTF-8"/>
+	 <meta name="viewport" content="width=device-width"/>
+     <link rel="stylesheet" href="style.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1 {
+        font-family: 'Kelly Slab', cursive;
+    }
+
+    img {
+        margin-bottom: -7px;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-button w3-black w3-xxlarge w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="Home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Головна</a>
+            <a href="Services.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Послуги</a>
+            <a href="Order.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Замовити</a>
+            <a href="Contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+        <!-- Header -->
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="clear">
+
+                 <a target="" href="index.html" class="w3-btn1"><img src="img\logo.jpg" style="width:30%"></a>
+
+            </div>  
+             <!-- Text block -->
+            <header class="contact_logo">
+                <h1><b>Послуги</b></h1>
+            </header>
+			
+	        <ul>
+                <li>Послуги БТІ</li>
+                <li>Технічне обстеження будівель і споруд</li>
+                <li>Дозвіл на будівництво (буд.паспорти, містобудівні умови та обмеження,введення в експлуатацію)</li>
+                <li>Інженерні вишукування ( геологія, геодезія)</li>
+				<li>Проектування та будівництво бомбосховищ, укриттів,житлових та не житлових будівель і споруд,тощо</li>
+                <li>Авторський та технічний нагляд;Архітектурно-дизайнерські проекти</li>
+                <li>Правова допомога громадянам та юридичний супровід будівельної діяльності</li>
+
+            </ul> 
+			
+			
+        </div>
+
+      
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:50px">
+        <p class="w3-medium"> Київ 2024 <br>Всі права захищені.</br> </p>
+    </footer>
+
+    <script>
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

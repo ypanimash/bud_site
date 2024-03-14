@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+     <title>Site</title>
+     <meta charset="UTF-8"/>
+	 <meta name="viewport" content="width=device-width"/>
+     <link rel="stylesheet" href="style.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1 {
+        font-family: 'Kelly Slab', cursive;
+    }
+
+    img {
+        margin-bottom: -7px;
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px;
+    }
+</style>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-button w3-black w3-xxlarge w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="Home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Головна</a>
+            <a href="Services.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Послуги</a>
+            <a href="Order.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Замовити</a>
+            <a href="Contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Контакти</a>
+        </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+
+        <!-- Header -->
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="clear">
+
+                 <a target="" href="index.html" class="w3-btn1"><img src="img\logo.jpg" style="width:30%"></a>
+
+            </div>  
+             <!-- Text block -->
+            <header class="contact_logo">
+                <h1><b>Контакти</b></h1>
+            </header>
+			
+	<div class = "contact_text">
+		
+	  <table class = "work_table">
+        <caption><h2>Графік роботи</h2></caption>
+        <tr>
+            <th>Дні тижня</th>
+            <th>Робочий час</th>
+			
+        </tr>
+         <tr><td>Понеділок</td> <td>9:00-18:00</td>
+         <tr><td>Вівторок</td> <td>9:00-18:00</td>
+         <tr><td>Середовище</td> <td>9:00-18:00</td>
+         <tr><td>Четвер</td> <td>9:00-18:00</td>
+         <tr><td>П'ятниця</td> <td>9:00-18:00</td>
+         <tr><td>Субота</td> <td>Вихідний</td>
+         <tr><td>Неділя</td> <td>Вихідний</td>
+		<tr>
+		
+       <div class="text_block_cont">
+              <h2>Контакти для клієнтів:</h2>
+                моб.+38(066)529-0-777 (viber)<br>
+                моб.+38(096)529-0-777<br>
+                e-mail: roznitsa@grandway.ua
+       </div>
+	  </tr>
+      </table>
+	   
+	  
+	  
+	  <div class="contact_address">
+              <h2>Наш адреса:</h2>
+               вулиця Якова Гніздовського, 1, Київ, 02000<br>
+			   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d615.3745960793923!2d30.64150653696316!3d50.45438784338311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4daad4019fbb3%3A0xff93cc4d21889178!2z0LLRg9C70LjRhtGPINCv0LrQvtCy0LAg0JPQvdGW0LfQtNC-0LLRgdGM0LrQvtCz0L4sIDEsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1710375707659!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> 
+			
+			
+    </div>
+			
+        </div>
+
+      
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:50px">
+        <p class="w3-medium"> Київ 2024 <br>Всі права захищені.</br> </p>
+    </footer>
+
+    <script>
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
